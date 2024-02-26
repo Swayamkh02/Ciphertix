@@ -1,0 +1,161 @@
+
+#add-event .home-button{
+  position: absolute;
+  top:40px;
+  right:40px;
+}
+#add-event body{
+    background-color: #161616;
+}
+#add-event #form {
+    display: grid;
+    position: absolute;
+    top: 15%;
+    left:38%;
+    place-items: center;
+    width: 300px;
+    height: 410px;
+    padding: 30px;
+    padding-top:50px;
+    padding-bottom: 10px;
+    background-color: #161616;
+    box-shadow: 0px 15px 60px #00ffff;
+    outline: 1px solid #2b9962;
+    border-radius: 10px;
+  }
+  
+  #add-event  #form-body {
+    position: absolute;
+    top: 40%;
+    right: 25px;
+    left: 25px;
+    width: 230px;
+    margin: -156px auto 0 auto;
+  }
+  
+  #add-event  #welcome-lines {
+    text-align: center;
+    line-height: 1;
+  }
+  
+  #add-event #welcome-line-1 {
+    color: #00ffff;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  
+  #add-event #welcome-line-2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 17px;
+  }
+  
+  #add-event #input-area {
+    margin-top: 40px;
+  }
+  
+  #add-event .form-inp {
+    padding: 11px 25px;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+    line-height: 1;
+    border-radius: 8px;
+  }
+  
+  #add-event .form-inp:focus {
+    border: 1px solid #00ffff;
+  }
+  #add-event .form-inp:nth-child(-n+4) {
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  #add-event .form-inp input {
+    width: 100%;
+    background: none;
+    font-size: 13.4px;
+    color: #00ffff;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #add-event  .form-inp input:focus {
+    outline: none;
+  }
+  
+  #add-event  #submit-button-cvr {
+    margin-top: 20px;
+  }
+  
+  #add-event #submit-button {
+    display: block;
+    width: 100%;
+    color: #00ffff;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    outline: 1px solid #00ffff;
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+  
+  #add-event #submit-button:hover {
+    transition: all ease-in-out .3s;
+    background-color: #00ffff;
+    color: #161616;
+    cursor: pointer;
+  }
+  
+  #add-event #forgot-pass {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #add-event #forgot-pass a {
+    color: #00ffff;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  #add-event #forgot-pass p {
+    color: #868686;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  #add-event  #bar {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    width: 28px;
+    height: 8px;
+    margin-left: -33px;
+    background-color: #00ffff;
+    border-radius: 10px;
+  }
+  
+  #add-event  #bar:before,
+  #add-event #bar:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ececec;
+    border-radius: 50%;
+  }
+  
+  #add-event  #bar:before {
+    right: -20px;
+  }
+  
+  #add-event  #bar:after {
+    right: -38px;
+  }
+  
+      

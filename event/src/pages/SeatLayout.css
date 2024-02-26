@@ -1,0 +1,188 @@
+.seat-layout .home-user-button{
+	position: absolute;
+	top:40px;
+	right:40px;
+}
+.ciphertix-logo{
+	position: absolute;
+}
+
+.ciphertix-logo img{
+	height:4vw;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.seat-layout .main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%; 
+}
+
+@media(max-width: 768px){
+	.seat-layout .main{
+		background-color: transparent;
+	}
+}
+
+.movie-screen {
+    background-color: black; /* Background color of the screen */
+    width: 75px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    position: relative;
+    left: 30vw;
+    top: 100px;
+}
+
+.movie-screen::before {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Set the shorter side at the bottom */
+    left: -100px; /* Adjust as needed to control the slope */
+    width: 400px; /* Adjust as needed to control the slope */
+    height: 100%;
+    background-color: black; /* Should match background color of the screen */
+    transform: perspective(200px) rotateX(-25deg); /* Adjust rotateX angle to control slope */
+    transform-origin: bottom; /* Set the transform origin to bottom */
+    z-index: -1;
+	box-shadow: 0px 0px 60px #00ffff;
+	border-radius: 5px;
+}
+.seats{
+	left:11.2vw;
+	position: relative;
+	top:170px;
+	width:50vw;
+}
+.seat-row{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	margin-top:0px;
+}
+.seats h3{
+	position: relative;
+	margin-left: 100px;
+	color: aqua;
+}
+.seat-row .seat{
+	width:24px;
+	height: 18px;
+	/* background-color: yellow; */
+	background:linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(4,14,152,1) 100%);
+	
+	border-radius: 15px 15px 3px 3px;
+	margin:10px;
+}
+
+.seat-row .selected-seat {
+    /* background-color: #00ffff; */
+	background: linear-gradient(0deg, rgba(189,195,34,1) 0%, rgba(61,125,17,1) 63%, rgba(0,99,0,1) 100%);
+
+    /* You can adjust other styles as needed */
+    color: black; /* Change text color to black for better contrast */
+    border: 1px solid black; /* Add border for better visibility */
+}
+
+.seat-row .seat:hover{
+	/* width:28px; */
+	/* height: 28px; */
+	/* background-color: orange; */
+	background: linear-gradient(0deg, rgba(134,34,195,1) 0%, rgba(152,4,19,1) 100%);
+	outline-color: 0px 0px 10px aqua;
+	/* border-radius: 15px 15px 0px 0px; */
+}
+
+.movie-screen h4{
+	color: #00ffff;
+	position: relative;
+	top:25%;
+	left:40%;
+	font-size: 30px;
+}
+
+.seat-layout .price-submit{
+	display: flex;
+	width:70%;
+	background-color: transparent;
+	align-items: center;
+	justify-content: center;
+	top:200px;
+	position: relative;
+}
+
+.seat-layout .price-submit button{
+	margin-left: 30px;
+	display: block;
+    /* width: 100%; */
+    color: #00ffff;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    /* margin: 0; */
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    outline: 1px solid #00ffff;
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.seat-layout .price-submit button:hover{
+	color: #212121;
+    background-color: #00ffff;
+}
+
+
+.seat-layout .price-submit p{
+	/* color: #212121; */
+    color: #00ffff;
+	font-size: 18px;
+}
+
+.movie-info-container{
+	position: absolute;
+	display: flex;
+	top:20%;
+	right:2vw;
+	width:25%;
+	padding: 20px;
+	height:fit-content;
+	/* background-color: #00ffff; */
+	border-radius: 12px;
+	background:linear-gradient(90deg, rgba(34, 192, 195, 0.1) 0%, rgba(4, 14, 152, 0.1) 100%);
+	/* background: transparent; */
+    /* box-shadow: 0px 05px 10px #00ffff; */
+    /* outline: 1px solid #2b9962;   */
+}
+
+.movie-info-container .text-white p{
+	font-size: 0.9vw;
+	color: white;
+	text-align: justify;
+}
+.movie-info-container .text-white .head-grade{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+.movie-info-container .text-white .head-grade{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom:-10px;
+}
+
+.movie-info-container .text-white .head-grade h2{
+	color: #00ffff;
+}
+.movie-info-container .text-white .head-grade .grade{
+	color: #ff0062;
+	margin-right: 1vw;
+}

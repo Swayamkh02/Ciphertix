@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kanit:wght@300&family=Preahvihear&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Doodle+Shadow&display=swap');
+.App {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  font-family: "Roboto Mono", monospace; 
+}
+p,a,div,span{
+  font-family: "Roboto Mono", monospace; 
+}
+h1,h2,h3,h4 {
+  font-family: "Roboto Mono", monospace; 
+}
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  /* background-color: #00ffff; Cyan thumb color */
+  border-radius: 2px;
+  background:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(4,14,152,1) 100%); /* Curved border */
+}
+

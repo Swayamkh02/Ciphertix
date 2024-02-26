@@ -1,0 +1,29 @@
+.taskbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    box-shadow: 0px -5px 30px #00ffff;
+    outline: 1px solid #2b9962;
+    /* padding: 10px 0; */
+  }
+  
+  .taskbar button {
+    margin:10px 5px;
+    /* padding: 4px 8px; */
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: black;
+    color: #00ffff;
+    cursor: pointer;
+  }
+  
+  .taskbar button:hover {
+    background-color: #00ffff;
+    color:black;
+  }
+
+  .taskbar .logo{
+    margin-right:65vw;
+    margin-left:2%;
+    color:azure;
+}

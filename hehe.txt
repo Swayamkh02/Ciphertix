@@ -1,0 +1,38 @@
+https://github.com/tranquoclong/movie__project_reactjs
+
+https://github.com/jiwonhan1/Movie-Booking-Site
+
+https://github.com/18harsh/Movie-Reservation-System
+
+Sure! Here are some features and components that you might consider including on your user page after login in your ticket booking website:
+
+1. **User Profile Section**:
+   - Display user information such as username, email, profile picture, etc.
+   - Allow users to update their profile information.
+
+2. **Booking History**:
+   - Display a list of past bookings made by the user.
+   - Include details such as booking ID, date, time, venue, event name, number of tickets booked, total cost, etc.
+   - Provide options to view more details of each booking or to cancel bookings if allowed.
+
+3. **Upcoming Events**:
+   - Show a list of upcoming events based on the user's preferences or past bookings.
+   - Include event details like event name, date, time, venue, etc.
+   - Allow users to click on events for more information or to book tickets.
+
+4. **Ticket Management**:
+   - Allow users to manage their tickets, such as downloading or printing tickets.
+   - Provide options to resend tickets via email if needed.
+
+5. **Preferences and Notifications**:
+   - Allow users to set their preferences for event categories, locations, artists, etc.
+   - Enable users to subscribe or unsubscribe from email notifications about upcoming events, special offers, etc.
+
+6. **Support and Help**:
+   - Include links or forms for users to contact customer support or seek assistance.
+   - Provide FAQs or help guides to assist users in navigating the website or resolving common issues.
+
+7. **Logout Option**:
+   - Allow users to log out of their accounts securely.
+
+These are just some suggestions, and you can customize the user page based on the specific requirements and goals of your ticket booking website. Always prioritize user experience and ensure that the user page is intuitive, responsive, and easy to navigate.

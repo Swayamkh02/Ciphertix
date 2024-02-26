@@ -1,0 +1,25 @@
+.home-user-button{
+    display: block;
+    width: fit-content;
+    color: #161616;
+    background-color: #00ffff;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    outline: 1px solid #00ffff;
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.home-user-button:hover{
+    color: #00ffff;
+    background-color: transparent;
+    outline: 1px solid #00ffff;
+    box-shadow: 0px 0px 10px #00ffff;
+}
+.home-user-button a{
+    text-decoration: none;
+}

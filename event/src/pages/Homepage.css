@@ -1,0 +1,99 @@
+body{
+    background-color: #161616;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+     /* background-image: url("https://www.transparenttextures.com/patterns/real-carbon-fibre.png"); */
+
+}
+.head-nav{
+    display:flex;
+    justify-content: space-around;
+    background-color: #212121;
+    align-items: center;
+    box-shadow: 0px 15px 60px #00ffff;
+}
+.head-nav .logo{
+    margin: auto;
+    margin-left:2%;
+    color: #00ffff;
+}
+
+.head-nav .logo img{
+    height:60px;
+    margin:3px;
+    outline:0px 0px 10px #00ffff;
+}
+
+
+/* .head-nav .Login{
+    width:4%;
+    height:70%;
+    margin:auto;
+    border-radius: 6px;
+} */
+
+.head-nav .Login{
+    /* display: block; */
+    width: 4%;
+    height:60%;
+    color: #00ffff;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 5px 30px;
+    padding: 7px 7px 7px 7px;
+    border: 0;
+    /* outline: 1px solid #00ffff; */
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.searchbar{
+    height: 60%;
+    /* color: aqua; */
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    margin:auto;
+    width:70%;
+    border-radius: 6px;
+}
+.searchbar input{
+    height: 100%;
+    width: 100%;
+    color: aqua;
+    /* border-radius: 10px;
+    background-color: green; */
+    padding: 11px 25px;
+    background: transparent;
+    border: 1px solid #00ffff;
+    line-height: 1;
+    border-radius: 8px;
+}
+
+
+.location-filter {
+    background-color: #212121;
+    color: #00ffff;
+}
+
+.Location-select {
+    /* Background color */
+    background-color: transparent;
+    /* Font color */
+    color: #00ffff; /* Replace with your desired blur color */
+    /* Borders */
+    border: 1px solid transparent;
+    border-radius: 5px; /* Adjust the radius as desired */
+    padding:5px;
+    /* Option styling (optional) */
+    option {
+      background-color: #212121;
+      color: #00ffff; /* Replace with your desired blur color */
+      font-size: 15px;
+    }
+  }
+  
+
+/* .head-nav  */
