@@ -72,8 +72,8 @@
 	width:24px;
 	height: 18px;
 	/* background-color: yellow; */
-	background:linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(4,14,152,1) 100%);
-	
+	background:linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(4,14,152,1) 100%);
+	/* border: 0.001px solid #fff6f6; */
 	border-radius: 15px 15px 3px 3px;
 	margin:10px;
 }
@@ -91,7 +91,7 @@
 	/* width:28px; */
 	/* height: 28px; */
 	/* background-color: orange; */
-	background: linear-gradient(0deg, rgba(134,34,195,1) 0%, rgba(152,4,19,1) 100%);
+	background: linear-gradient(90deg, rgba(134,34,195,1) 0%, rgba(152,4,19,1) 100%);
 	outline-color: 0px 0px 10px aqua;
 	/* border-radius: 15px 15px 0px 0px; */
 }

@@ -8,5 +8,4 @@ const HomeUserButton = ({userName}) =>{
         </div>
     );
 }
-
 export default HomeUserButton;

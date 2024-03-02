@@ -46,17 +46,16 @@ const SeatLayout = () => {
       console.log(contract);
       const urlUsername = searchParams.get('username');
       const urlEvent=searchParams.get('event');
-      setPrice(2);
+      setPrice(0.001);
       setUserName(urlUsername);
       setEventName(urlEvent);
+      console.log(eventName);
     //   setPrice(0);
       }, [searchParams]);
-
       const purchaseTicket = async () => {
         try {
         const val=(0.0001+price*selectedSeats.length);
         console.log(val);
-
         const amount = { value: ethers.utils.parseEther(val.toString()) };
         const tx = await contract.purchaseTicket(userName, eventName,price, selectedSeats.length,selectedSeats,amount);
         // Wait for the transaction to be mined
@@ -122,11 +121,10 @@ const SeatLayout = () => {
                 <button onClick={purchaseTicket}>Book Selected Seats</button>
             </div>
             <div className="content">
-            <MovieInfo movie={eventName}/>
+            <MovieInfo movie={searchParams.get('event')}/>
             </div>
             
 
-            
         </div>
     );
 };

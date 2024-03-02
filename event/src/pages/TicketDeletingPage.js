@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import { useSearchParams } from 'react-router-dom';
 import './TicketDeletingPage.css';
 import HomeUserButton from '../components/HomeUserButton';
-import MovieSeatBooking from '../components/MovieSeatBooking';
+// import MovieSeatBooking from '../components/MovieSeatBooking';
 
 const TicketDeletingPage = () => {
   const [userName, setUserName] = useState('');
@@ -49,9 +49,7 @@ const TicketDeletingPage = () => {
       const deleteTicket = async () => {
         try {
         const tx = await contract.deleteTicket(userName,eventName);
-        // Wait for the transaction to be mined
         await tx.wait();
-        // Handle success or show a success message to the user
         console.log('Ticket purchased successfully!');
         } catch (error) {
         console.error('Error purchasing ticket:', error.message);
@@ -79,8 +77,6 @@ const TicketDeletingPage = () => {
             {/* <label>Event Name:</label> */}
             <input type="text" value={eventName} onChange={(e) => setEventName(e.target.value)} disabled/>
           </div>
-          
-          
           {/* <div className="form-inp" id="qty-label"> */}
             {/* <div id="qty-label"> */}
               {/* <label >Enter Qty:</label> */}

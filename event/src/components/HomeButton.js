@@ -8,5 +8,4 @@ const HomeButton = () =>{
         </div>
     );
 }
-
 export default HomeButton;

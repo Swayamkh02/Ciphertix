@@ -37,7 +37,6 @@ const AddEvent = () => {
         const [year, month, day] = eventDate.split("-");
         const [hour, minute, second] = eventTime.split(":");
 
-// Convert components to integers
         const yearInt = parseInt(year);
         const monthInt = parseInt(month);
         const dayInt = parseInt(day);
@@ -66,15 +65,12 @@ const AddEvent = () => {
           </div>
           <div id="input-area">
             <div className="form-inp">
-              {/* <label>Event Name:</label> */}
               <input type="text" value={eventName} onChange={(e) => setEventName(e.target.value)} placeholder='Event Name'/>
             </div>
             <div className="form-inp">
-              {/* <label>Event Date:</label> */}
               <input type="date" value={eventDate} onChange={(e) => setEventDate(e.target.value)} placeholder='Event Date'/>
             </div>
             <div className="form-inp">
-              {/* <label>Event Time:</label> */}
               <input type="time" value={eventTime} onChange={(e) => setEventTime(e.target.value)} placeholder='Event Time'/>
             </div>
           </div>

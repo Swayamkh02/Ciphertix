@@ -5,6 +5,7 @@ import { ethers } from 'ethers';
 import contract1 from '../blockchain/artifacts/contracts/EventTicketing.sol/EventTicketing.json';
 // import { useContract } from '../pages/ContractContext';
 import HomeButton from '../components/HomeButton';
+import FileUploadToPinata from '../components/FileUploadToPinata';
 
 
 const SignupPage = () => {
@@ -15,6 +16,7 @@ const SignupPage = () => {
   const [error, setError] = useState('');
   const [contract, setContract] = useState(null);
   const [provider1, setProvider] = useState(null);
+  const [IdUrl, setUploadedFileUrl] = useState(null);
   const navigate = useNavigate();
   
   useEffect(() => {
@@ -30,9 +32,7 @@ const SignupPage = () => {
               return;
             }
             console.log(provider);
-            // Set your contract address and ABI
             const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
-            // Connect to the contract
             const contract = new ethers.Contract(contractAddress, contract1.abi,provider.getSigner());
             setContract(contract);
             console.log(contract);
@@ -44,53 +44,46 @@ const SignupPage = () => {
 
       initializeContract();
   }, []);
-  // const contract=useContract;
+  const handleFileUpload = (url) => {
+    setUploadedFileUrl(url); 
+  };
   console.log(contract);
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check for null or empty fields
-    if (!username || !email || !password || !confirmPassword) {
+    if (!username || !email || !password || !confirmPassword ) {
       setError('Please fill in all fields.');
       return; // Prevent further processing
     }
-    
-    // Check password matching
     if (password !== confirmPassword) {
       setError('Passwords do not match.');
       return;
     }
 
-    // Here you can add additional validation if needed
-    // (e.g., minimum length, special characters, email format)
-
-    // Handle signup logic here
-    // (e.g., send data to your API or backend)
     console.log(contract);
     const registerUser = async () => {
       try {
-          const call=await contract.registerUser(username, email).call;
-          await call.wait();
-          console.log(call);
-          console.log('User registered successfully!');
+          if(IdUrl){
+            const call=await contract.registerUser(username, password, IdUrl).call;
+            await call.wait();
+            console.log(call);
+            console.log('User registered successfully!');
+          }else{
+            alert("Please upload your Id");
+          }
+          
       } catch (error) {
           console.error('Error registering user:', error);
       }
     };
-
-    
-
     if(contract){
       registerUser(username,email);
-      navigate(`/user?username=${username}`);
+      // navigate(`/user?username=${username}`);
+      navigate(`/`);
     }
     else{
       console.log("Contract not present");
     }
-
-    // Assuming successful signup, redirect to a suitable page
-    
-    // Use the appropriate path as needed
   };
 
   return (
@@ -106,7 +99,6 @@ const SignupPage = () => {
           </div>
         {error && <p className="error">{error}</p>}
         <div id="input-area">
-          {/* <label htmlFor="username">Username:</label> */}
           <div className="form-inp">
             <input
               type="text"
@@ -116,9 +108,6 @@ const SignupPage = () => {
               placeholder="Enter Username"
             />
             </div>
-        {/* </div>
-        <div id="input-area"> */}
-          {/* <label htmlFor="email">Email:</label> */}
           <div className="form-inp">
             <input
               type="email"
@@ -128,9 +117,6 @@ const SignupPage = () => {
               placeholder='Enter Email'
             />
           </div>
-        {/* </div>
-        <div id="input-area"> */}
-          {/* <label htmlFor="password">Password:</label> */}
           <div className="form-inp">
             <input
               type="password"
@@ -140,27 +126,32 @@ const SignupPage = () => {
               placeholder='Enter Password'
             />
           </div>
-        {/* </div>
-        <div id="input-area"> */}
-          {/* <label htmlFor="confirmPassword">Confirm Password:</label> */}
           <div className="form-inp">
             <input
               type="password"
               id="confirmPassword"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              placeholder='Confirm Passwowrd'
+              placeholder='Confirm Password'
             />
           </div>
         </div>
         <button type="submit" id="submit-button">Signup</button>
         <div className="LoginFromSignup" id="forgot-pass">
+          {IdUrl && <p>You Id Uploaded. 
+            <a href={`https://gateway.pinata.cloud/ipfs/${IdUrl}`} target="_blank">See Here</a>
+            </p>}
+          {!IdUrl && <p>Upload your id to Verify</p>}
           <p>Already a user ? Login<a href='/login'> Here</a></p>
         </div>
+        {/* <h1>{IdUrl}</h1> */}
       </div>
       
     </form>
-
+    <div className="upload">
+      <FileUploadToPinata onUpload={handleFileUpload}/>
+    </div>
+        
     </div>
     
 

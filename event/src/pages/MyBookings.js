@@ -66,15 +66,6 @@ const MyBookings = () => {
   
   if(userBookings){
     console.log(userBookings);
-    // const userDetailsArray = JSON.parse(userBookings);
-    // const name = userDetailsArray[0];
-    // const pass = userDetailsArray[1];
-    // console.log("name:"+name+"Pass:"+pass);
-    // if (name === username && pass === password) {
-    //   navigate(`/user?username=${username}`);
-    // } else {
-    //   alert('User details not found.');
-    // }
   }else{
     console.log("User details awaited");
   }

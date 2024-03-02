@@ -12,7 +12,7 @@ a {
     /* border-radius: 10px; */
     /* background-color: #161616; */
     background:linear-gradient(90deg, rgba(34, 192, 195, 0.2) 0%, rgba(4, 14, 152, 0.2) 100%);
-    box-shadow: 0px 05px 10px #00ffff;
+    box-shadow: 0px 0px 15px #00ffff;
     outline: 1px solid #2b9962;
     border-radius: 10px;
 }

@@ -55,7 +55,7 @@ const Homepage = () => {
   const events = [
     {
       imageURL: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/706b9474134343.5c239806af449.jpg',
-      title: 'Event 1',
+      title: 'URI',
       description: 'Description for Event 1',
     },
     {

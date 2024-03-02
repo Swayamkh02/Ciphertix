@@ -4,7 +4,9 @@
     overflow-x: auto;
     white-space: nowrap;
     overflow-y: hidden;
-    height:90vh;
+    /* top:-87px; */
+    border-radius: 15px;
+    height:100vh;
   }
   .featured-event-list .slide {
     display: inline-block;

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './FeaturedEventList.css'; // Import the CSS file for styling
+import './FeaturedEventList.css'; 
 
 const FeaturedEventList = ({ events }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % events.length);
-    }, 3000); // Change the image every 3 seconds
-
+    }, 3000); 
     return () => clearInterval(interval);
   }, [events.length]);
 
@@ -31,5 +29,4 @@ const FeaturedEventList = ({ events }) => {
     </div>
   );
 };
-
 export default FeaturedEventList;

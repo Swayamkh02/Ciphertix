@@ -8,7 +8,6 @@ const hre = require("hardhat");
 
 async function main() {
     const lock = await hre.ethers.deployContract("EventTicketing");
-
   await lock.waitForDeployment();
 
   console.log(

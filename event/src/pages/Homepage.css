@@ -9,7 +9,12 @@ body{
     justify-content: space-around;
     background-color: #212121;
     align-items: center;
-    box-shadow: 0px 15px 60px #00ffff;
+    box-shadow: 0px 0px 4px #00ffff;
+    outline: 5px #00ffff;
+    margin: 10px;
+    border-radius: 15px;
+    background:linear-gradient(90deg, rgba(34, 192, 195, 0.2) 0%, rgba(4, 14, 152, 0.2) 100%);
+    /* border:0.2px solid #00ffff; */
 }
 .head-nav .logo{
     margin: auto;
@@ -63,10 +68,10 @@ body{
     height: 100%;
     width: 100%;
     color: aqua;
-    /* border-radius: 10px;
-    background-color: green; */
+    /* border-radius: 10px;*/
+    background-color: #161616; 
     padding: 11px 25px;
-    background: transparent;
+    /* background: transparent; */
     border: 1px solid #00ffff;
     line-height: 1;
     border-radius: 8px;

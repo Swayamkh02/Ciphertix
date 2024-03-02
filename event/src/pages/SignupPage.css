@@ -102,7 +102,7 @@
     cursor: pointer;
     transition: all ease-in-out .3s;
   }
-  
+
   #sign-up #submit-button:hover {
     transition: all ease-in-out .3s;
     background-color: #00ffff;
@@ -112,7 +112,7 @@
   
   #sign-up #forgot-pass {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   #sign-up #forgot-pass a {
@@ -156,3 +156,10 @@
   }
   
       
+  .upload{
+    position: absolute;
+    right: 100px;
+    bottom: 250px;
+  }
+
+  

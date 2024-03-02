@@ -1,11 +1,8 @@
 const Categories = ({ onSelect }) => {
-    // Replace with your blockchain interaction logic to fetch categories
-    const categories = []; // Placeholder array
-  
+    const categories = []; 
     const handleCategorySelect = (category) => {
-      onSelect(category); // Placeholder function
+      onSelect(category); 
     };
-  
     return (
       <div className="categories">
         {/* Render category buttons or dropdown based on your design */}

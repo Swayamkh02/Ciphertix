@@ -5,20 +5,16 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import UserComponent from './pages/UserComponent';
 import MyBookings from './pages/MyBookings';
-import { ContractProvider } from './pages/ContractContext';
-import TicketBookingPage from './pages/TicketDeletingPage';
+// import { ContractProvider } from './pages/ContractContext';
 import AddEvent from './pages/AddEvent';
 import SeatLayout from './pages/SeatLayout';
 import TicketDeletingPage from './pages/TicketDeletingPage';
 import MovieInfo from './trial/MovieInfo';
 
 
-
-
 function App() {
   return (
     <BrowserRouter>
-      {/* <ContractProvider> */}
       {/* <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -36,10 +32,7 @@ function App() {
         <Route path="/add-event" element={<AddEvent />} />
         <Route path="/movie-info" element={<MovieInfo />} />
         {/* <Route path="/events/:eventId" element={<EventDetails />} /> */}
-        {/* Add more routes as needed */}
       </Routes>
-      {/* </ContractProvider> */}
-
     </BrowserRouter>
   );
 }
