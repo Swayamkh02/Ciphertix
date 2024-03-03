@@ -122,10 +122,10 @@
 // };
 
 // export default MovieInfo;
-
 import React, { useState, useEffect } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { useSearchParams } from 'react-router-dom';
+// require('dotenv').config();
 
 const genAI = new GoogleGenerativeAI('AIzaSyAO1okvZwOjxrtFUX2ZRs2Ak1qhbjSb_VI');
 

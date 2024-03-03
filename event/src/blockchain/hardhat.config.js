@@ -1,6 +1,8 @@
 require("@nomicfoundation/hardhat-toolbox");
 
 /** @type import('hardhat/config').HardhatUserConfig */
+const INFURA_PROJECT_ID = 'a26d60be9b734b6da908f91b3328c93e';
+const GORELI_PRIVATE_KEY = 'a055ee968a758922b0d92c28e158686f908bdeb1a0fbb510a6a6e920d5e403ee';
 module.exports = {
   solidity: "0.8.24",
   networks: {
@@ -8,6 +10,12 @@ module.exports = {
       chainId: 31337,
     },
   },
+  // networks:{
+  //   goerli: {
+  //     url: `https://goerli.infura.io/v3/${INFURA_PROJECT_ID}`,
+  //     accounts: [GORELI_PRIVATE_KEY],
+  //   },
+  // },
 };
 
 

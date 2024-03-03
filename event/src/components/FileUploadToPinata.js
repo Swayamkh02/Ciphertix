@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './FileUploadToPinata.css';
+// require('dotenv').config();
+
 
 function FileUploadToPinata({ onUpload }) {
   const [file, setFile] = useState(null);
