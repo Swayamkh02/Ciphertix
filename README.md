@@ -37,6 +37,8 @@
         <h2>Contributors 👩‍💻👨‍💻</h2>
         <ul>
             <li>Swayam Khandelwal - <a href="https://swayamkh02.github.io/">Github</a></li>
+            <li>Vijaykumar Mamadapur - <a href="https://github.com/VijayakumarMamadapur">Github</a></li>
+            <li>Roopa L S - <a href="https://github.com/Roopa4112">Github</a></li>
         </ul>
         <h2>Support 📧</h2>
         <p>For inquiries or support, please contact <a href="swayamkhandelwal02@gmail.com">swayamkhandelwal02@gmail.com</a>.</p>
